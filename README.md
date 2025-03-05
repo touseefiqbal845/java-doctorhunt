@@ -53,17 +53,48 @@ Run the example of connecting to OpenFin and creating applications
 
 1. Clone this repository
 
-2. Go to release directory and start run.bat
+2. Go to release directory and start
+   Here are the gradlew commands:
 
-3. Once the java app starts, click on Start button, which should start OpenFin Runtime.  The java app will wait and try to connect to OpenFin Runtime.
+Start the Project (Run)
+For a Spring Boot project:
+./gradlew bootRun
+For a general project:
+./gradlew run
 
-4. Once OpenFin Runtime is started and Java app connects successfully,  "Create Application" button is enabled.  You can click on the button to bring up a dialog for entering configuration of any HTML5 app.  By default, the dialog is pre-populated with configuration for Hello OpenFin demo app.
+Delete the Build Directory (Clean)
+./gradlew clean
 
-5. You can use buttons in Window Control section to move and re-size HTML5 window of Hello OpenFin app.
+Build the Project
+./gradlew build
 
-6. Click "Create Application" button, which should start a dialog with all the fields pre-populated for our Hello OpenFin demo HTML5 application.  Just click on "Create" button.
+Flyway Migrations
+Run Flyway migrations:
+./gradlew flywayMigrate
+Validate migrations:
+./gradlew flywayValidate
+Clean migrations:
+./gradlew flywayClean
 
-7. After Hello OpenFin starts, you can use the buttons under Window Control of Java app to control Hello OpenFin window.
+Combining Commands
+Clean and build together:
+./gradlew clean build
+
+Test the Project
+./gradlew test
+
+List Available Tasks
+./gradlew tasks
+
+4. Once the java app starts, click on Start button, which should start OpenFin Runtime.  The java app will wait and try to connect to OpenFin Runtime.
+
+5. Once OpenFin Runtime is started and Java app connects successfully,  "Create Application" button is enabled.  You can click on the button to bring up a dialog for entering configuration of any HTML5 app.  By default, the dialog is pre-populated with configuration for Hello OpenFin demo app.
+
+6. You can use buttons in Window Control section to move and re-size HTML5 window of Hello OpenFin app.
+
+7. Click "Create Application" button, which should start a dialog with all the fields pre-populated for our Hello OpenFin demo HTML5 application.  Just click on "Create" button.
+
+8. After Hello OpenFin starts, you can use the buttons under Window Control of Java app to control Hello OpenFin window.
 
 ## Source Code Review
 
