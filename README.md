@@ -1,7 +1,52 @@
-# Java Adapter Example
+# Doctor Hunt Project - Java & Groovy API
 
-## Overview
-The following repo contains examples for OpenFin's Java adapter.
+This project integrates **Java** and **Groovy** to develop the **Doctor Hunt Project APIs**, a system where patients can make appointments with doctors, maintain medical records, and receive diagnosis offers. It includes features like user authentication, doctor management, and appointment scheduling.
+
+The application is built using **Spring Boot** for the backend, with **PostgreSQL** as the database. The project uses **DTO (Data Transfer Objects)** for managing data flow between layers, ensuring smooth communication between components.
+
+## Project Overview
+
+This project includes:
+
+- **Patient Appointment Management**: Patients can book appointments with doctors.
+- **Medical Records Management**: Store and manage patient medical records for ongoing and historical reference.
+- **Doctor Diagnosis Offers**: Doctors can create and manage diagnostic tests offered to patients.
+- **User Authentication**: Secure login and registration for both patients and doctors.
+- **Spring Boot Backend**: RESTful APIs using Spring Boot framework to handle business logic and database interaction.
+- **PostgreSQL Database**: Reliable relational database to store patient, doctor, appointment, and medical record data.
+- **Groovy Scripting**: Groovy is used to dynamically script and enhance functionality, allowing quick changes or new features to be implemented easily.
+
+## Features
+
+- **User Authentication**: Patients and doctors can register, log in, and authenticate via JWT (JSON Web Tokens).
+- **Appointment Booking**: Patients can view available doctors and book appointments based on time slots.
+- **Medical Records**: Patients' medical records are stored securely, allowing doctors to add or view historical information.
+- **Diagnosis Test Offers**: Doctors can add available diagnostic tests to their profiles for patients to select.
+- **Spring Boot & PostgreSQL**: The project uses Spring Boot to create robust backend APIs and PostgreSQL for data persistence.
+- **DTO (Data Transfer Objects)**: DTOs are used to transfer data between layers efficiently, ensuring proper structuring of API responses.
+
+## API Endpoints
+The following API routes are available:
+
+## Appointments:
+@RequestMapping("/api/appointments")
+Endpoints for managing patient appointments.
+
+## Diagnosis Offers:
+@RequestMapping("/api/diagnosis-offers")
+Endpoints for managing diagnosis offers by doctors.
+
+## Doctors:
+@RequestMapping("/api/doctors")
+Endpoints for managing doctor profiles and information.
+
+## Medical Records:
+@RequestMapping("/api/medical-records")
+Endpoints for managing patient medical records.
+
+## Users:
+@RequestMapping("/api/users")
+Endpoints for user registration, login, and authentication.
 
 ## Guidelines
 Run the example of connecting to OpenFin and creating applications
