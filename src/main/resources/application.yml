@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/doctorhunt_java
+    username: postgres
+    password: nosql
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    locations: classpath:migration/db
+    enabled: true
+    baseline-on-migrate: true
+
+    
+    jwt:
+  secret: mySuperSecretKeyThatIsLongAndSecure
+

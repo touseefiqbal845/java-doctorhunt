@@ -454,5 +454,3 @@ groovy -cp src/test/groovy com.example.ScriptTest
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-#   j a v a - d o c t o r h u n t  
- 
